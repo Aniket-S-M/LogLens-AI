@@ -1,0 +1,82 @@
+{
+  "total_cases": 4,
+  "completed_cases": 4,
+  "failed_cases": 0,
+  "status_matches": 4,
+  "status_match_rate": 1.0,
+  "average_keyword_coverage": 1.0,
+  "average_evidence_coverage": 1.0,
+  "average_latency_ms": 9454.515,
+  "results": [
+    {
+      "id": "database_connection_refused",
+      "category": "clear_failure",
+      "expected_status": "success",
+      "actual_status": "success",
+      "status_match": true,
+      "diagnosis_count": 1,
+      "matched_keywords": [
+        "database",
+        "connection"
+      ],
+      "keyword_coverage": 1.0,
+      "matched_evidence": [
+        "Database connection failed",
+        "Connection refused"
+      ],
+      "evidence_coverage": 1.0,
+      "latency_ms": 16689.2,
+      "evidence_valid": true,
+      "error": null
+    },
+    {
+      "id": "application_timeout",
+      "category": "clear_failure",
+      "expected_status": "success",
+      "actual_status": "success",
+      "status_match": true,
+      "diagnosis_count": 1,
+      "matched_keywords": [
+        "timeout"
+      ],
+      "keyword_coverage": 1.0,
+      "matched_evidence": [
+        "Request timed out"
+      ],
+      "evidence_coverage": 1.0,
+      "latency_ms": 13177.92,
+      "evidence_valid": true,
+      "error": null
+    },
+    {
+      "id": "normal_application_startup",
+      "category": "benign",
+      "expected_status": "insufficient_evidence",
+      "actual_status": "insufficient_evidence",
+      "status_match": true,
+      "diagnosis_count": 0,
+      "matched_keywords": [],
+      "keyword_coverage": null,
+      "matched_evidence": [],
+      "evidence_coverage": null,
+      "latency_ms": 3752.89,
+      "evidence_valid": true,
+      "error": null
+    },
+    {
+      "id": "incomplete_database_log",
+      "category": "ambiguous",
+      "expected_status": "insufficient_evidence",
+      "actual_status": "insufficient_evidence",
+      "status_match": true,
+      "diagnosis_count": 0,
+      "matched_keywords": [],
+      "keyword_coverage": null,
+      "matched_evidence": [],
+      "evidence_coverage": null,
+      "latency_ms": 4198.05,
+      "evidence_valid": true,
+      "error": null
+    }
+  ]
+}

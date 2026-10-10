@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": "database_connection_refused",
+    "category": "clear_failure",
+    "logs": "2026-10-09 10:00:03 ERROR Database connection failed\n2026-10-09 10:00:04 ERROR ConnectionError: Connection refused",
+    "expected_status": "success",
+    "expected_keywords": ["database", "connection"],
+    "expected_evidence": [
+      "Database connection failed",
+      "Connection refused"
+    ]
+  },
+  {
+    "id": "application_timeout",
+    "category": "clear_failure",
+    "logs": "2026-10-09 10:10:00 INFO Starting report generation\n2026-10-09 10:10:30 ERROR Request timed out",
+    "expected_status": "success",
+    "expected_keywords": ["timeout"],
+    "expected_evidence": ["Request timed out"]
+  },
+  {
+    "id": "normal_application_startup",
+    "category": "benign",
+    "logs": "2026-10-09 10:00:00 INFO Application starting\n2026-10-09 10:00:01 INFO Configuration loaded\n2026-10-09 10:00:02 INFO Application ready",
+    "expected_status": "insufficient_evidence",
+    "expected_keywords": [],
+    "expected_evidence": []
+  },
+  {
+    "id": "incomplete_database_log",
+    "category": "ambiguous",
+    "logs": "2026-10-09 10:00:03 WARNING Database response slower than usual",
+    "expected_status": "insufficient_evidence",
+    "expected_keywords": [],
+    "expected_evidence": []
+  }
+]

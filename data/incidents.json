@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": "INC-001",
+    "title": "Database connection refused",
+    "category": "database",
+    "symptoms": "Database connection failed. Connection refused while opening a database connection.",
+    "root_cause": "The database service was unavailable or was not listening on the configured host and port.",
+    "resolution": "Verify database service health, confirm the configured host and port, and inspect database service logs.",
+    "source": "Synthetic incident for LogLens AI testing"
+  },
+  {
+    "id": "INC-002",
+    "title": "Application request timeout",
+    "category": "performance",
+    "symptoms": "Request timed out after several seconds. Requests became slow or failed to complete.",
+    "root_cause": "The request may have been blocked by a slow dependency, overloaded service, or an excessive timeout configuration.",
+    "resolution": "Inspect request latency and dependency health. Check resource utilization and configure timeouts based on measured service behavior.",
+    "source": "Synthetic incident for LogLens AI testing"
+  },
+  {
+    "id": "INC-003",
+    "title": "Service failed to bind to port",
+    "category": "networking",
+    "symptoms": "Address already in use. The application could not bind to its configured listening port.",
+    "root_cause": "Another process may already be listening on the requested port.",
+    "resolution": "Identify the process using the port, verify whether it should be running, and configure a valid listening port if needed.",
+    "source": "Synthetic incident for LogLens AI testing"
+  },
+  {
+    "id": "INC-004",
+    "title": "Permission denied when reading a file",
+    "category": "permissions",
+    "symptoms": "Permission denied while opening or reading a configuration or application file.",
+    "root_cause": "The process may lack the filesystem permissions required to access the file.",
+    "resolution": "Inspect file ownership and permissions, confirm the service account, and grant only the access required.",
+    "source": "Synthetic incident for LogLens AI testing"
+  },
+  {
+    "id": "INC-005",
+    "title": "Out of memory during job execution",
+    "category": "resources",
+    "symptoms": "Out of memory. A worker or scheduled job terminated while processing data.",
+    "root_cause": "The workload may have exceeded available memory or retained more data than expected.",
+    "resolution": "Inspect memory usage and job size, profile memory-intensive operations, and adjust workload limits or resources based on evidence.",
+    "source": "Synthetic incident for LogLens AI testing"
+  }
+]

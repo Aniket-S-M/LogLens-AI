@@ -1,0 +1,88 @@
+{
+  "total_queries": 5,
+  "recall_at_1": 1.0,
+  "recall_at_3": 1.0,
+  "mrr": 1.0,
+  "results": [
+    {
+      "id": "Q-001",
+      "query": "ERROR database connection refused by server",
+      "expected_ids": [
+        "INC-001"
+      ],
+      "ranked_ids": [
+        "INC-001",
+        "INC-003",
+        "INC-002"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank": 1.0,
+      "correct_rank": 1
+    },
+    {
+      "id": "Q-002",
+      "query": "HTTP request took too long and timed out",
+      "expected_ids": [
+        "INC-002"
+      ],
+      "ranked_ids": [
+        "INC-002",
+        "INC-003",
+        "INC-005"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank": 1.0,
+      "correct_rank": 1
+    },
+    {
+      "id": "Q-003",
+      "query": "Address already in use when application starts",
+      "expected_ids": [
+        "INC-003"
+      ],
+      "ranked_ids": [
+        "INC-003",
+        "INC-002",
+        "INC-004"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank": 1.0,
+      "correct_rank": 1
+    },
+    {
+      "id": "Q-004",
+      "query": "Permission denied opening a configuration file",
+      "expected_ids": [
+        "INC-004"
+      ],
+      "ranked_ids": [
+        "INC-004",
+        "INC-001",
+        "INC-003"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank": 1.0,
+      "correct_rank": 1
+    },
+    {
+      "id": "Q-005",
+      "query": "Worker process terminated because it ran out of memory",
+      "expected_ids": [
+        "INC-005"
+      ],
+      "ranked_ids": [
+        "INC-005",
+        "INC-002",
+        "INC-003"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank": 1.0,
+      "correct_rank": 1
+    }
+  ]
+}
