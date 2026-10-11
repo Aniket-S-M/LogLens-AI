@@ -1,0 +1,9 @@
+2026-10-09 10:00:01 INFO Application started
+2026-10-09 10:00:02 INFO Connecting to database
+2026-10-09 10:00:03 ERROR Database connection failed
+Traceback (most recent call last):
+  File "app.py", line 42, in connect
+    connection = database.connect()
+ConnectionError: Connection refused
+2026-10-09 10:00:04 WARNING Retrying database connection
+2026-10-09 10:00:05 ERROR Request failed: database unavailable
