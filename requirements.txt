@@ -1,6 +1,6 @@
-pytest
+
 fastapi
-uvicorn[standard]
+uvicorn
 httpx
 pydantic
 chromadb
