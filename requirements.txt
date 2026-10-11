@@ -3,3 +3,6 @@ fastapi
 uvicorn[standard]
 httpx
 pydantic
+chromadb
+sentence-transformers
+streamlit
