@@ -1,7 +1,12 @@
 
+import os
+import pytest
 from loglens.llm_client import analyze_logs
 
-
+@pytest.mark.skipif(
+    os.getenv("RUN_OLLAMA_TESTS") != "1",
+    reason="Requires a running Ollama server and the phi3:mini model",
+)
 def test_phi3_analyzes_sample_failure():
     logs = (
         "[3] 2026-10-09 10:00:03 ERROR Database connection failed\n"
